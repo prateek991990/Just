@@ -1,0 +1,25 @@
+<table>
+    <thead>
+    <trow>
+        <th> S.No</th>
+        <th> First Name</th>
+        <th> Last Name</th>
+        <th> Phone Number</th>
+        <th> Email Address</th>
+        <th> Age</th>
+
+    </trow>
+    </thead>
+    <tbody>
+    {% for employee in context %}
+    <tr>
+        <td>{{employee.id}}</td>
+        <td>{{employee.first_name}}</td>
+        <td>{{employee.last_name}}</td>
+        <td>{{employee.phone_number}}</td>
+        <td>{{employee.email_id}}</td>
+        <td>{{employee.age}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
